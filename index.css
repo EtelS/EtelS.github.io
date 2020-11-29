@@ -1,0 +1,171 @@
+/* asi reseteamos todos margins y paddings que el navegador agrega por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    /* variables de colores */
+    --main-black: #010101;
+    --main-white: #FFFFFF;
+    --main-red: #E10236;
+    --main-semi-red: #ED1C24;
+    --main-orange: #F36422;
+    --main-semi-orange: #F7951C;
+    --main-yellow: #F5BF00;
+    --main-green: #008026;
+    --main-blue: #3C70B5;
+    --main-purple: #873E95;
+    --main-semi-purple: #B90062;
+  }
+
+  body{
+  display: grid;
+  grid-template-columns:repeat(10, 10%) ;
+  }
+
+  h3, h5, p, #nombre, #cargo{
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  h3{
+    padding-top: 25px;
+  }
+  p{
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 15px;
+  }
+  li{
+    list-style-type: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .cabecera{
+    grid-column: 5 / 7;
+    padding: 10px;
+    color: var(--main-white);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    height: 40px;
+    width:100%;
+   
+  }
+  .cabecera:hover{
+   transition: .9s ease; /* Safari y Chrome */
+   /* -moz-transition: .9s ease; /* Firefox */
+    /*-o-transition: .9s ease; /* IE 9 */
+    /*-ms-transition: .9s ease; /* Opera */ 
+   
+      -webkit-transform:translate(-20px,0);
+      -moz-transform:translate(-20px,0);
+      -ms-transform:translate(-20px,0);
+      -o-transform:translate(-20px,0);
+      transform:translate(-20px,0);
+    
+  }
+.secciones{
+  grid-column: 2 / 7;
+}
+.cursiva{
+font-family: 'Pacifico', cursive;
+}
+.titulo{
+  padding-left: 5px;
+}
+.iconos{
+  width: 18%;
+  float: left;
+  margin: 5% 5% 0% 0%;
+  text-align: center;
+  
+}
+.yellow{
+  color: var(--main-yellow);
+}
+.semiorange{
+  color: var(--main-semi-orange);
+}
+.orange{
+  color:var(--main-orange);
+}
+.red{
+  color: var(--main-red);
+}
+.semired{
+  color: var(--main-semi-red);
+}
+.semipurple{
+  color: var(--main-semi-purple);
+}
+.blue{
+  color: var(--main-blue)
+}
+.certificados:hover{
+  transition: .9s ease;  
+  
+     -webkit-transform:scale(2);
+     -moz-transform:scale(2);
+     -ms-transform:scale(2);
+     -o-transform:scale(2);
+     transform:scale(2);
+
+}
+#grid-container {
+  margin-top: 20px;
+  grid-column: 2 / 10;
+  grid-row: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%) ;
+    grid-template-rows: repeat(9, 11%);
+  }
+  #principal{
+    
+      grid-column: 1 / 5;
+      grid-row: 1 / 10;
+      background-color: gray;
+  }
+  #nombre {
+    font-size: 72px;
+    font-weight: 900;  
+  }
+  #cargo{
+    letter-spacing: 1em;
+    font-weight: 700;
+  } 
+  #name{
+    background: var(--main-black);
+  }
+  #about{
+    background: var(--main-yellow);
+   
+  }
+  #skills{
+    background: var(--main-semi-orange);
+  }
+  #experiencia{
+    background: var(--main-orange);
+  }
+  #educacion{
+    background: var(--main-red);
+  }
+  #portfolio{
+    background: var(--main-semi-red);
+  }
+  #contacto{
+    background: var(--main-semi-purple);
+  }
+  #pdf{
+    background: var(--main-purple);
+  }
+  #redes{
+    background: var(--main-blue);
+  }
+
+
+
