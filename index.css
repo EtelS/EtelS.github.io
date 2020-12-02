@@ -74,6 +74,7 @@
 }
 .cursiva{
 font-family: 'Pacifico', cursive;
+color: var(--main-white);
 }
 .titulo{
   padding-left: 5px;
@@ -128,15 +129,17 @@ font-family: 'Pacifico', cursive;
     
       grid-column: 1 / 5;
       grid-row: 1 / 10;
-      background-color: gray;
+      background-image: url('imagenes/portada_byn.png');
   }
   #nombre {
     font-size: 72px;
     font-weight: 900;  
+    color: var(--main-white);
   }
   #cargo{
-    letter-spacing: 1em;
+    letter-spacing: 0.5em;
     font-weight: 700;
+    color: var(--main-white);
   } 
   #name{
     background: var(--main-black);
