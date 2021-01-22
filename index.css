@@ -173,3 +173,23 @@ color: var(--main-white);
 
 
 
+  @media (max-width: 600px) {
+    body{
+      display: flex;
+        width: 100%;
+    }
+   header{
+       display: none;
+    }
+    aside{
+        width: 100%;
+        padding-left: 50px;
+    }
+    #foto_perfil{
+    margin: 10px auto;
+    }
+    .general{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+  }
