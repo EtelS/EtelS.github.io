@@ -212,7 +212,7 @@ color: var(--main-white);
        transform:scale(1.5);
   
   }
-  iconos {
+  .iconos {
     width: 50%;
     margin: 5% 5% 0% 20%;
 }
