@@ -48,6 +48,9 @@
   .cabecera{
     grid-column: 5 / 7;
     padding: 10px;
+  }
+  .cabecera2{
+    
     color: var(--main-white);
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
@@ -194,10 +197,25 @@ color: var(--main-white);
       border-radius: 20px;
       margin: 1px;
       text-align: center;
+      box-shadow: 6px 6px 6px #999;      
   }
   .secciones{
     grid-column: 2 / 10;
   }
+  .certificados:hover{
+    transition: .9s ease;  
+    
+       -webkit-transform:scale(1.5);
+       -moz-transform:scale(1.5);
+       -ms-transform:scale(1.5);
+       -o-transform:scale(1.5);
+       transform:scale(1.5);
+  
+  }
+  iconos {
+    width: 50%;
+    margin: 5% 5% 0% 20%;
+}
     aside{
         width: 100%;
         padding-left: 50px;
