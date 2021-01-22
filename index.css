@@ -171,16 +171,33 @@ color: var(--main-white);
   }
 
 
-
+/* --------- ACA EMPIEZA EL MEDIA QUERY!!!! ----------*/
 
   @media (max-width: 600px) {
-    body{
+    /*body{
       display: flex;
         width: 100%;
-    }
-   header{
+    }*/
+   #principal{
        display: none;
     }
+    .cabecera:hover{
+      transition: .0s ease;      
+         -webkit-transform:translate(0,0);
+         -moz-transform:translate(0,0);
+         -ms-transform:translate(0,0);
+         -o-transform:translate(0,0);
+         transform:translate(0,0);
+     }
+    .cabecera{
+      grid-column: 1 / 7;
+      border-radius: 20px;
+      margin: 1px;
+      text-align: center;
+  }
+  .secciones{
+    grid-column: 2 / 10;
+  }
     aside{
         width: 100%;
         padding-left: 50px;
