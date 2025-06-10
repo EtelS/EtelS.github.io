@@ -10,6 +10,38 @@
     
 </head>
 <body >
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'http://localhost:5678/webhook/a889d2ae-2159-402f-b326-5f61e90f602e/chat',
+        webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+		'Hola! 👋',
+		'Soy el asistente virtual de Etel, ¿En qué puedo ayudarte?'
+	],
+	i18n: {
+		en: {
+			title: 'Hola! 👋',
+			subtitle: "Soy un chatbot creado con IA",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'Consultame',
+		},
+	},
+	});
+</script>
     <header id="grid-container">
         <div id="principal" class="imagen" alt="hola Soy Etel">
             <h4 id="hola" class="cursiva titulo">Hola, yo soy / Hello, I am </h4>
